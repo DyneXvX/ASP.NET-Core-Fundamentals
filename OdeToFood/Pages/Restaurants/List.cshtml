@@ -1,13 +1,27 @@
 ﻿@page
 @model OdeToFood.Pages.Restaurants.ListModel
 @{
-    ViewData["Title"] = "List";
+    ViewData["Title"] = "Restaurants";
 }
 
 <h1>Restaurants</h1>
 
+<form method="get">
+    <div class="input-group mb-3">
+        <div class="input-group mb-3">
+            <input type="search" class="form-control" asp-for="SearchTerm" />
+            <div class="input-group-append">
+                <button class="input-group-text">Search</button>
+            </div>
+
+
+        </div>
+    </div>
+</form>
+
+
 <table class="table">
-    @foreach(var restaurant in Model.Restaurants)
+    @foreach (var restaurant in Model.Restaurants)
     {
         <tr>
             <td>@restaurant.Name</td>
