@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="bootstrap" Version="4.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\OdeToFood.Core\OdeToFood.Core.csproj" />
   </ItemGroup>
 
